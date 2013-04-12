@@ -27,10 +27,10 @@ let s:did_snips_mappings = 1
 " maybe there is a better way without polluting registers ?
 "exec 'xnoremap ' . g:snips_trigger_key. ' s<c-o>:let<space>g:snipmate_content_visual=getreg('1')<cr>'
 
-exec 'ino <silent> <c-d> <c-r>=snipMate#TriggerSnippet()<cr>'
-exec 'snor <silent> <c-d> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>'
-exec 'ino <silent> <c-a> <c-r>=snipMate#BackwardsSnippet()<cr>'
-exec 'snor <silent> <c-a> <esc>i<right><c-r>=snipMate#BackwardsSnippet()<cr>'
+exec 'ino <silent> <c-j> <c-r>=snipMate#TriggerSnippet()<cr>'
+exec 'snor <silent> <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>'
+exec 'ino <silent> <c-j> <c-r>=snipMate#BackwardsSnippet()<cr>'
+exec 'snor <silent> <c-j> <esc>i<right><c-r>=snipMate#BackwardsSnippet()<cr>'
 exec 'ino <silent> <c-r><tab> <c-r>=snipMate#ShowAvailableSnips()<cr>'
 
 " The default mappings for these are annoying & sometimes break snipMate.
