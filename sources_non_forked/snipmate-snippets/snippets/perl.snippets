@@ -5,6 +5,18 @@ snippet #!
 # Hash Pointer
 snippet .
 	 =>
+
+# $/@/%的敲击要按shift，为了简单改用s/l/h方式
+# 分别表示 scalar/list/hash
+snippet s
+	$${1}
+	
+snippet l
+	@${1}
+	
+snippet h
+	%${1}
+	
 # Function
 snippet sub
 	sub ${1:function_name} {
