@@ -8,13 +8,18 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set background=dark
 
 if has("gui_running")
     colorscheme peaksea
 else
-    colorscheme desert "ir_black
+    colorscheme molokai "desert ir_black
+    let g:molokai_original = 1
+    let g:rehash256 = 1
 endif
+
+"set background=light
+highlight Normal ctermbg=238
+
 
 " Set font according to system
 if has("mac") || has("macunix")
